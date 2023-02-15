@@ -22,10 +22,15 @@
     flex: 1;
     background-color: #000000;
     height: 100vh;
+    top: 0;
+    position: sticky;
+    
     @include mobile() {
       position: sticky;
       text-align: center;
-      display: inline block;
+      top: 0;
+    }
+    @include tablet() {
     }
     ul {
       padding: 0;
